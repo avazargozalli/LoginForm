@@ -20,9 +20,9 @@ section {
 }
 
 @keyframes animateBg {
-    100% {
-        filter: hue-rotate(360deg);
-    }
+  100% {
+    filter: hue-rotate(360deg);
+  }
 }
 
 .login-box {
@@ -36,12 +36,19 @@ section {
   justify-content: center;
   align-items: center;
   backdrop-filter: blur(15px);
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 4px 16px,
+    rgba(255, 255, 255, 0.1) 0px 8px 24px,
+    rgba(255, 255, 255, 0.1) 0px 16px 56px;
 }
 
 .login-box h2 {
+  display: inline-block;
   font-size: 2em;
   color: aliceblue;
   text-align: center;
+  justify-content: center;
+  border: thin solid #ffffff4d;
+  padding: 5px 15px;
 }
 
 .input-box {
@@ -118,6 +125,12 @@ button {
   font-size: 1em;
   color: #000;
   font-weight: 500;
+  transition: 0.6s ease;
+}
+
+button:hover {
+  box-shadow: rgba(253, 253, 253, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 
 .register-link {
@@ -144,7 +157,7 @@ button {
     border: none;
     border-radius: 0;
   }
-  .input-box{
+  .input-box {
     width: 290px;
   }
 }
